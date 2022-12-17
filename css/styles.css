@@ -443,13 +443,14 @@ p {
   fill: var(--border-icon-color);
   border-radius: 50%;
   cursor: pointer;
+
+  transition: fill 250ms var(--timing-funk), background-color 250ms var(--timing-funk);
 }
 
 .socials-link:hover,
 .socials-link:focus {
   fill: var(--primery-white-color);
   background-color: var(--accent-color);
-  transition: fill 250ms var(--timing-funk), background-color 250ms var(--timing-funk);
 }
 
 /* Наші партнери */
@@ -475,14 +476,14 @@ p {
   border: 1px solid var(--border-icon-color);
   border-radius: 4px;
   cursor: pointer;
+
+  transition: fill 250ms var(--timing-funk), background-color 250ms var(--timing-funk);
 }
 
 .partners-link:hover,
 .partners-link:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
-  transition: fill 250ms var(--timing-funk), background-color 250ms var(--timing-funk);
-
 }
 
 /* Портфоліо */
@@ -627,7 +628,6 @@ p {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
-  transition: color 250ms var(--timing-funk);
 }
 
 .address-link,
@@ -636,6 +636,8 @@ p {
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
+
+  transition: color 250ms var(--timing-funk);
 }
 
 /* Соціальні мережі компанії */
@@ -671,12 +673,13 @@ p {
   background-color: var(--footer-bg-icon);
   border-radius: 50%;
   cursor: pointer;
+
+  transition: background-color 250ms var(--timing-funk);
 }
 
 .footer-socials-link:hover,
 .footer-socials-link:focus {
   background-color: var(--button-primery-bg-color);
-  transition: background-color 250ms var(--timing-funk);
 }
 
 /* Модальне вікно */
@@ -690,7 +693,7 @@ p {
 
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transform: opacity 250ms var(--timing-funk);
+  transition: opacity 250ms var(--timing-funk);
 }
 
 .modal {
@@ -705,7 +708,7 @@ p {
 
   background-color: var(--primery-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-repeat: 4px;
+  border-radius: 4px;
 }
 
 .is-hidden {
